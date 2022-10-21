@@ -9,8 +9,8 @@ body, html {
     padding: 16px;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 300px auto auto auto;
-    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
     gap: 15px;
   }
   
@@ -26,34 +26,24 @@ body, html {
   
   .header {
     background-color: #FFDE22;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    
+    grid-column: 1 / 4;
   }
   
   .sidebar {
     background-color: #FF7755;
-    grid-row-start: 2;
-    grid-row-end: 8;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-row: 2 / 4;
   }
   
   .nav {
     background-color: #00DDFF;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column: 2 / 4;
   }
   
   .article {
     background-color: #bccbde;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 8;
+    grid-column: 2 / 4;
+ 
   }
   
   .article p {
@@ -65,8 +55,5 @@ body, html {
   
   .footer {
     background-color: #393f4d;
-    grid-row-start: 8;
-    grid-row-end: 8;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column: 1/4;
   }
